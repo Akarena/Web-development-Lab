@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/animate.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="grid_container">
+        <section class="item1">
+            <img src="./img/logo.png">
+        </section>
+        <section class="item2">
+            <p>Université d’Abdelmalek Essaâdi</p>
+            <p>Faculté des Sciences et Techniques</p>
+            <p>Club Géoinformation</p>
+        </section>
+        <section class="item3">
+            <img src="./img/fst.png">  
+        </section>
+         
+    </header>
+   <main>
+       <h1>Event Invitation Registration</h1>
+        <form onsubmit="greetings()" class="grid_form">
+            <section class="form_item1">
+                <label for="" class="required">Full Name:</label>
+                <br>
+                <input placeholder="First" type="text" name="f_name">
+                <input placeholder="Last" type="text" name="l_name">
+                <br><br>
+                <label for="" class="required">Birthday:</label>
+                <br>
+                <input type="date">
+                <br><br>
+                <label for="">Telephone:</label>
+                <br>
+                <input type="tel">
+            </section>
+            <section class="form_item2">
+                <label for="" class="required">Email:</label>
+                <br>
+                <input type="email">
+                <br><br>
+                <label for="" class="required">Password:</label>
+                <br>
+                <input type="password">
+            </section>
+            <section class="form_item3">
+                <label for="" class="required">Event:</label>
+                <br>
+                <input type="radio" id="openDay" name="event" value="Open Day">
+                <label class="radio_label" for="openDay">Open Day</label><br>
+                <input type="radio" id="geoHackathon" name="event" value="GeoHackathon">
+                <label class="radio_label" for="geoHackathon">GeoHackathon</label><br>
+                <input type="radio" id="nationalMeeting" name="event" value="National Meeting">
+                <label class="radio_label" for="nationalMeeting">National Meeting</label>
+            </section>
+            <section class="form_item4">
+                <button id="submit_button">Submit</button>
+            </section>
+        </form>
+
+   </main> 
+   
+
+</body>
+</html>
